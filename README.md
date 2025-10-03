@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚗 Chinese EV Analyzer
 
-## Getting Started
+An interactive web application for comparing and discovering Chinese electric vehicles. Built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## ✨ Features
 
+- **Interactive Criteria Selection**: Choose from price ranges, battery capacity, and horsepower levels
+- **Smart Recommendations**: Get personalized EV recommendations based on your preferences
+- **Comprehensive Data**: Compare performance metrics, features, and specifications
+- **Manufacturer Links**: Direct links to official manufacturer websites
+- **Modern UI**: Beautiful, responsive design with smooth animations
+- **Real-time Filtering**: Instant results as you adjust your criteria
+
+## 🎯 Criteria Options
+
+### Price Ranges
+- **Budget Friendly**: $0 - $65,000
+- **Moderate Price**: $65,000 - $75,000  
+- **Luxury Vehicle**: $75,000+
+
+### Battery Capacity
+- **Low**: 60-80 kWh
+- **Medium**: 80-100 kWh
+- **High**: 100+ kWh
+
+### Horsepower
+- **Low**: 400-500 HP
+- **Medium**: 500-600 HP
+- **High**: 600-800 HP
+- **Extreme**: 800+ HP
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18.0.0 or higher
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd chinese-ev-analyzer
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## 🏗️ Built With
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **React 18** - Modern React with hooks
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Vercel (Recommended)
 
-## Deploy on Vercel
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy with one click
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project includes a `vercel.json` configuration file for optimal deployment.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Other Platforms
+
+The app can be deployed to any platform that supports Next.js:
+- Netlify
+- AWS Amplify
+- Railway
+- Heroku
+
+## 🎨 Customization
+
+### Adding New EVs
+
+Edit `src/data/evData.ts` to add new vehicles:
+
+```typescript
+{
+  id: 'unique-id',
+  name: 'Vehicle Name',
+  manufacturer: 'Manufacturer',
+  horsepower: 500,
+  battery_capacity: 100,
+  price: 65000,
+  // ... other properties
+}
+```
+
+### Styling
+
+The app uses Tailwind CSS for styling. Custom styles can be added to `src/app/globals.css`.
+
+## 📊 Data Sources
+
+Vehicle data is sourced from:
+- Official manufacturer websites
+- CarNewsChina
+- Manual research and verification
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🆘 Support
+
+For support or questions, please open an issue in the repository.
+
+---
+
+Made with ❤️ for the Chinese EV community
